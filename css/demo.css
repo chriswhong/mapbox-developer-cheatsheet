@@ -75,6 +75,7 @@ h1 {
 .category-tile {
   padding: 20px 14px;
   box-sizing: border-box;
+  border-radius: 7px;
 }
 
 .tile {
@@ -95,18 +96,33 @@ h1 {
 
 
 .category-maps {
-  background-color: #7fc97f;
-  border-color: #7fc97f;
+  background-color: #ff9b31;
+  border-color: #ff9b31;
 }
 
 .category-navigation {
-  background-color: #beaed4;
-  border-color: #beaed4;
+  background-color: #3095ff;
+  border-color: #3095ff;
 }
 
 .category-search {
-  background-color: #fdc086;
-  border-color: #fdc086;
+  background-color: #ffd522;
+  border-color: #ffd522;
+}
+
+.category-tilesets {
+  background-color: #2fc078;
+  border-color: #2fc078;
+}
+
+.category-vision {
+  background-color: #7539d7;
+  border-color: #7539d7;
+}
+
+.category-data {
+  background-color: #8b96aa;
+  border-color: #8b96aa;
 }
 
 .flip-card {
@@ -158,6 +174,7 @@ h1 {
   justify-content: center;
   padding: 12px;
   box-sizing: border-box;
+  border-radius: 7px;
 }
 
 /* Style the back side */
@@ -175,5 +192,6 @@ h1 {
   border-width: 4px;
   border-style: solid;
   background-color: white;
+  border-radius: 7px;
 }
 

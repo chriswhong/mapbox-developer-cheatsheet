@@ -1,4 +1,7 @@
 export default [
+    // 
+    // MAPS
+    // 
     {
       type: "category",
       title: "Maps",
@@ -9,7 +12,7 @@ export default [
       type: "tile",
       title: "MapboxGL JS",
       category: "maps",
-      subTitle: "WebGL Map Rendering Library",
+      subTitle: "Impressive WebGL Map Rendering",
     },
     {
       type: "tile",
@@ -27,44 +30,44 @@ export default [
       type: "tile",
       title: "Vector Tiles API",
       category: "maps",
-      subTitle: "Serves Vector Tile from vector data uploaded to mapbox.com",
+      subTitle: "Vector Data in small chunks",
     },
     {
       type: "tile",
       title: "Raster Tiles API",
       category: "maps",
       subTitle:
-        "Serves raster tiles generated from satellite imagery tilesets and tilesets generated from raster data uploaded to mapbox.com.",
+        "Raster Images for web maps",
     },
     {
       type: "tile",
       category: "maps",
       title: "Static Images API",
-      subTitle: "Generates Customized Maps as Images",
+      subTitle: "Generate Customized Maps as Images",
     },
     {
       type: "tile",
       category: "maps",
       title: "Static Tiles API",
-      subTitle: "Serves raster tiles generated from Mapbox Studio styles",
+      subTitle: "Serve raster tiles from Studio styles",
     },
     {
       type: "tile",
       category: "maps",
       title: "Styles API",
-      subTitle: "Read and change map styles, fonts, and images",
+      subTitle: "Get/set map styles, fonts, and images",
     },
     {
       type: "tile",
       category: "maps",
       title: "TileQuery API",
-      subTitle: "retrieve data about specific features from a vector tileset",
+      subTitle: "Retrieve feature data from vector tilesets",
     },
     {
       type: "tile",
       category: "maps",
       title: "Uploads API",
-      subTitle: "transforms geographic data into tilesets",
+      subTitle: "Transform geographic data into tilesets",
     },
   
     {
@@ -72,21 +75,23 @@ export default [
       category: "maps",
       title: "Datasets API",
       subTitle:
-        "supports reading, creating, updating, and removing features from a dataset",
+        "Get/Set features in datasets",
     },
     {
       type: "tile",
       category: "maps",
       title: "Fonts API",
-      subTitle: "manage fonts used in mapbox styles",
+      subTitle: "Manage fonts used in mapbox styles",
     },
     {
       type: "tile",
       category: "maps",
       title: "Maps Mobile SDKs",
-      subTitle: "build interactive maps on iOS and Android",
+      subTitle: "Build interactive maps on iOS and Android",
     },
-  
+    // 
+    // NAVIGATION
+    // 
     {
       type: "category",
       title: "Navigation",
@@ -98,7 +103,7 @@ export default [
       type: "tile",
       category: "navigation",
       title: "Navigation Mobile SDKs",
-      subTitle: "build nav apps on iOS and Android",
+      subTitle: "Build navigation apps on iOS and Android",
     },
     {
       type: "tile",
@@ -112,7 +117,7 @@ export default [
       category: "navigation",
       title: "Map Matching API",
       subTitle:
-        "snaps fuzzy, inaccurate traces from a GPS unit or a phone to the OpenStreetMap road and path network",
+        "Snap fuzzy data to roads",
     },
     {
       type: "tile",
@@ -132,6 +137,9 @@ export default [
       title: "Matrix API",
       subTitle: "get travel times between many points.",
     },
+    // 
+    // SEARCH
+    // 
     {
       type: "category",
       title: "Search",
@@ -169,12 +177,66 @@ export default [
       category: "search",
       title: "Address Autofill",
       subTitle:
-        "makes filling out postal addresses on web and mobile apps faster, easier, and more accurate",
+        "autofill postal addresses",
     },
     {
       type: "tile",
       category: "search",
       title: "Geocoding Playground",
       subTitle: "Try out the geocoing API",
+    },
+    // 
+    // VISION
+    // 
+    {
+      type: "category",
+      title: "Vision",
+      category: "vision",
+      subTitle: "Interpret road scenes in real-time",
+    },
+    {
+      type: "tile",
+      category: "vision",
+      title: "Vision SDKs",
+      subTitle: "Interpet road scenes using device camera",
+    },
+    {
+      type: "tile",
+      category: "vision",
+      title: "Traffic Signs",
+      subTitle: "Traffic Sign Image Reference",
+    },
+    // 
+    // DATA
+    // 
+    {
+      type: "category",
+      title: "Data",
+      category: "data",
+      subTitle: "Add location datasets to any map, platform, or intelligence solution.",
+    },
+    {
+      type: "tile",
+      category: "data",
+      title: "Tilesets",
+      subTitle: "Ready to use vector, raster, and elevation data",
+    },
+    {
+      type: "tile",
+      category: "data",
+      title: "Mapbox Boundaries",
+      subTitle: "Global boundary polygons",
+    },
+    {
+      type: "tile",
+      category: "data",
+      title: "Mapbox Movement",
+      subTitle: "Understand where and when people are moving",
+    },
+    {
+      type: "tile",
+      category: "data",
+      title: "Traffic Data",
+      subTitle: "Global Vehicle Traffic",
     },
   ];
