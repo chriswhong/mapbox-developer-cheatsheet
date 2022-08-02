@@ -134,7 +134,7 @@ h1 {
 /* card flip transition from https://www.w3schools.com/howto/howto_css_flip_card.asp */
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner,  .flip-card:active .flip-card-inner{
   transform: rotateX(180deg);
 }
 
