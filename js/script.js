@@ -39,6 +39,30 @@ function resizeGrid() {
   const cellHeight = `${100 / numColumns}vw`;
 
   grid.column(numColumns, "moveScale").cellHeight(cellHeight);
+
+  // TODO: figure out how to add these listeners without a setTimeout()
+  setTimeout(() => {
+    // category click handlers
+    const categoryTiles = document.querySelectorAll(".category-tile");
+    categoryTiles.forEach((categoryTile) => {
+      categoryTile.addEventListener("click", function handleClick(event) {
+        const { category } = event.currentTarget.dataset;
+
+        var list = document.querySelectorAll(`.tile.category-${category}`);
+        const isFlipped = list[0].classList.contains(
+          "flip-card-category-flipped"
+        );
+
+        for (var i = 0; i < list.length; ++i) {
+          if (isFlipped) {
+            list[i].classList.remove("flip-card-category-flipped");
+          } else {
+            list[i].classList.add("flip-card-category-flipped");
+          }
+        }
+      });
+    });
+  }, 500);
 }
 
 // build a gridstack widget based on type
@@ -53,10 +77,11 @@ const getWidget = (item) => {
       minH: 2,
       maxH: 2,
       content: `
-            <div class='wiggle-card grid-stack-item-content-inner category-tile category-${category}'>
+            <div class='wiggle-card cursor-pointer grid-stack-item-content-inner category-tile category-${category} group' data-category=${category}>
                 <img src = './img/${category}.svg'>
                 <div class='title'>${title}</div>
                 <div class='subtitle'>${subTitle}</div>
+                <div class='absolute bottom-3 invisible group-hover:visible text-xs'>Click to see tile descriptions</div>
             </div>
         `,
     };
@@ -69,7 +94,7 @@ const getWidget = (item) => {
     minH: 1,
     maxH: 1,
     content: `
-        <div class="flip-card grid-stack-item-content-inner tile">
+        <div class="flip-card grid-stack-item-content-inner tile category-${category}">
           <div class="flip-card-inner">
             <div class="flip-card-front category-${category}">
                 ${title}
@@ -96,7 +121,6 @@ const getFreeNearbyPositionForCategory = () => {
   let y = 0;
   const numColumns = calculateNumColumns();
   while (true) {
-    console.log("checking", x, y);
     const isEmpty = grid.isAreaEmpty(x, y, 2, 2);
 
     if (isEmpty) {
@@ -132,7 +156,6 @@ const getFreeNearbyPosition = (categoryTilePosition, category) => {
     const isEmpty = grid.isAreaEmpty(x, y, 1, 1);
 
     if (isEmpty) {
-      console.log(`${category} found and empty spot at ${x}, ${y} `);
       return [x, y];
     } else {
       attempts += 1;

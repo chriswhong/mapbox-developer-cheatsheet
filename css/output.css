@@ -932,6 +932,10 @@ video {
   --tw-backdrop-sepia: 
 }
 
+.invisible{
+  visibility:hidden
+}
+
 .static{
   position:static
 }
@@ -948,6 +952,10 @@ video {
   position:relative
 }
 
+.bottom-3{
+  bottom:0.75rem
+}
+
 .left-2{
   left:0.5rem
 }
@@ -962,6 +970,10 @@ video {
 
 .grid{
   display:grid
+}
+
+.cursor-pointer{
+  cursor:pointer
 }
 
 .resize{
@@ -1067,7 +1079,7 @@ h1 {
 .category-tile {
   padding: 20px 14px;
   box-sizing: border-box;
-  border-radius: 7px;
+  border-radius: 3px;
 }
 
 .tile {
@@ -1146,7 +1158,9 @@ h1 {
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 
-.flip-card:hover .flip-card-inner,  .flip-card:active .flip-card-inner{
+.flip-card:hover .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card-category-flipped .flip-card-inner{
   transform: rotateX(180deg);
 }
 
@@ -1171,7 +1185,7 @@ h1 {
   justify-content: center;
   padding: 12px;
   box-sizing: border-box;
-  border-radius: 7px;
+  border-radius: 3px;
 }
 
 /* Style the back side */
@@ -1189,7 +1203,7 @@ h1 {
   border-width: 4px;
   border-style: solid;
   background-color: white;
-  border-radius: 7px;
+  border-radius: 3px;
 }
 
 .wiggle-card:hover {
@@ -1241,4 +1255,8 @@ h1 {
   100% {
     -webkit-transform: rotate(0deg);
   }
+}
+
+.group:hover .group-hover\:visible{
+  visibility:visible
 }

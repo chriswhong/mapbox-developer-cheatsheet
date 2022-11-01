@@ -79,7 +79,8 @@ h1 {
 .category-tile {
   padding: 20px 14px;
   box-sizing: border-box;
-  border-radius: 7px;
+  border-radius: 3px;
+
 }
 
 .tile {
@@ -137,6 +138,7 @@ h1 {
   height: 100%;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   cursor: pointer;
+  
 }
 
 /* This container is needed to position the front and back side */
@@ -156,7 +158,9 @@ h1 {
 /* card flip transition from https://www.w3schools.com/howto/howto_css_flip_card.asp */
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner,  .flip-card:active .flip-card-inner{
+.flip-card:hover .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card-category-flipped .flip-card-inner{
   transform: rotateX(180deg);
 }
 
@@ -180,7 +184,7 @@ h1 {
   justify-content: center;
   padding: 12px;
   box-sizing: border-box;
-  border-radius: 7px;
+  border-radius: 3px;
 }
 
 /* Style the back side */
@@ -198,7 +202,7 @@ h1 {
   border-width: 4px;
   border-style: solid;
   background-color: white;
-  border-radius: 7px;
+  border-radius: 3px;
 }
 
 .wiggle-card:hover {
