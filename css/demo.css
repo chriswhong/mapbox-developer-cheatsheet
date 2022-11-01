@@ -1,6 +1,10 @@
 /* required file for gridstack to work */
 @import "./gridstack.min.css";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html, body {
   font-family: 'Raleway', sans-serif;
   margin: 0;
@@ -92,6 +96,7 @@ h1 {
 .category-tile .subtitle {
   font-weight: 400;
   font-size: 16px;
+  cursor: pointer;
 }
 
 
@@ -196,3 +201,15 @@ h1 {
   border-radius: 7px;
 }
 
+.wiggle-card:hover {
+  animation: wiggle .6s;
+  animation-timing-function: ease;
+}
+
+@keyframes wiggle {
+  0% {-webkit-transform: rotate(2.5deg);}
+  25% {-webkit-transform: rotate(-2.5deg);}
+  50% {-webkit-transform: rotate(5deg);}
+  75% {-webkit-transform: rotate(-1.25deg);}
+  100% {-webkit-transform: rotate(0deg);}
+}
