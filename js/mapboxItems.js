@@ -398,4 +398,12 @@ export default [
     subTitle: "Chat, get help, find friends",
     iconClass: "fa-brands fa-discord",
   },
+  {
+    type: "tile",
+    category: "tools-and-resources",
+    title: "turf.js",
+    subTitle: "advanced geospatial analysis in javascript",
+    link: "https://turfjs.org/",
+    iconClass: "fa-brands fa-square-js",
+  },
 ];
