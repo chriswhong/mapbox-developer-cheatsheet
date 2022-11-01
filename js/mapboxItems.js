@@ -374,4 +374,28 @@ export default [
     link: "https://docs.mapbox.com/data/traffic/",
     iconClass: 'fa-solid fa-database"',
   },
+  // //
+  // // Tools and Resources
+  // //
+  {
+    type: "category",
+    title: "Tools & Resources",
+    category: "tools-and-resources",
+    subTitle: "Helpful things for Mapbox Developers",
+  },
+  {
+    type: "tile",
+    category: "tools-and-resources",
+    title: "geojson.io",
+    subTitle: "Simple geojson creator and editor",
+    link: "https://geojson.io",
+    iconClass: "fa-regular fa-hand-pointer",
+  },
+  {
+    type: "tile",
+    category: "tools-and-resources",
+    title: "Mapbox Developer Discord",
+    subTitle: "Chat, get help, find friends",
+    iconClass: "fa-brands fa-discord",
+  },
 ];

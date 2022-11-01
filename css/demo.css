@@ -91,7 +91,9 @@ h1 {
 .category-tile .title {
   font-weight: 800;
   font-size: 30px;
+  margin-top: 11px;
   margin-bottom: 8px;
+  line-height: 30px;
 }
 .category-tile .subtitle {
   font-weight: 400;
@@ -130,6 +132,12 @@ h1 {
   background-color: #8b96aade;
   border-color: #8b96aade;
 }
+
+.category-tools-and-resources {
+  background-color: #3d5e9ade;
+  border-color: #3d5e9ade;
+}
+
 
 .flip-card {
   background-color: transparent;
