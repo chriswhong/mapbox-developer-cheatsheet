@@ -163,6 +163,10 @@ h1 {
   transform: rotateX(180deg);
 }
 
+.flip-card-category-flipped .flip-card-inner:hover {
+  transform: rotateX(0deg);
+}
+
 /* Position the front and back side */
 
 .flip-card-front, .flip-card-back {
