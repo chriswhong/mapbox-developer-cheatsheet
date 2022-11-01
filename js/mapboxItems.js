@@ -414,4 +414,12 @@ export default [
     link: "https://github.com/jscastro76/threebox",
     iconClass: "fa-brands fa-square-js",
   },
+  {
+    type: "tile",
+    category: "tools-and-resources",
+    title: "Mapbox GL Draw",
+    subTitle: "draw tools for Mapbox GL JS",
+    link: "https://github.com/mapbox/mapbox-gl-draw",
+    iconClass: "fa-brands fa-square-js",
+  },
 ];
