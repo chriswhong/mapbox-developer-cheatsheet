@@ -6,3 +6,6 @@ Based on [Google Cloud Developer Cheat Sheet](https://googlecloudcheatsheet.with
 
 View it live at [https://chriswhong.github.io/mapbox-developer-cheatsheet](https://chriswhong.github.io/mapbox-developer-cheatsheet)
 
+## Build and watch tailwind css
+
+npx tailwindcss -i ./css/demo.css -o ./css/output.css --watch

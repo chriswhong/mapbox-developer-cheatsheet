@@ -417,7 +417,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", sans-serif;
   /* 4 */
 }
 
@@ -964,12 +964,24 @@ video {
   bottom:1rem
 }
 
+.ml-3{
+  margin-left:0.75rem
+}
+
 .flex{
   display:flex
 }
 
 .grid{
   display:grid
+}
+
+.h-full{
+  height:100%
+}
+
+.flex-grow{
+  flex-grow:1
 }
 
 .cursor-pointer{
@@ -984,13 +996,95 @@ video {
   align-items:center
 }
 
+.justify-end{
+  justify-content:flex-end
+}
+
+.rounded{
+  border-radius:0.25rem
+}
+
+.border-l{
+  border-left-width:1px
+}
+
+.border-solid{
+  border-style:solid
+}
+
+.border-gray-700{
+  --tw-border-opacity:1;
+  border-color:rgb(55 65 81 / var(--tw-border-opacity))
+}
+
+.bg-mb-gray-dark{
+  --tw-bg-opacity:1;
+  background-color:rgb(14 33 39 / var(--tw-bg-opacity))
+}
+
+.bg-mb-purple-500{
+  --tw-bg-opacity:1;
+  background-color:rgb(66 100 251 / var(--tw-bg-opacity))
+}
+
+.px-3{
+  padding-left:0.75rem;
+  padding-right:0.75rem
+}
+
+.py-1{
+  padding-top:0.25rem;
+  padding-bottom:0.25rem
+}
+
+.px-4{
+  padding-left:1rem;
+  padding-right:1rem
+}
+
+.pl-3{
+  padding-left:0.75rem
+}
+
+.font-sans{
+  font-family:"Open Sans", sans-serif
+}
+
+.text-base{
+  font-size:1rem;
+  line-height:1.5rem
+}
+
 .text-xs{
   font-size:0.75rem;
   line-height:1rem
 }
 
+.font-bold{
+  font-weight:700
+}
+
+.font-medium{
+  font-weight:500
+}
+
+.tracking-wide{
+  letter-spacing:0.025em
+}
+
+.text-white{
+  --tw-text-opacity:1;
+  color:rgb(255 255 255 / var(--tw-text-opacity))
+}
+
 .filter{
   filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)
+}
+
+.transition-all{
+  transition-property:all;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:150ms
 }
 
 .transition{
@@ -999,6 +1093,10 @@ video {
   transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration:150ms
+}
+
+.duration-200{
+  transition-duration:200ms
 }
 
 html, body {
@@ -1255,6 +1353,16 @@ h1 {
   100% {
     -webkit-transform: rotate(0deg);
   }
+}
+
+.hover\:bg-mb-purple-700:hover{
+  --tw-bg-opacity:1;
+  background-color:rgb(15 56 191 / var(--tw-bg-opacity))
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity:1;
+  color:rgb(255 255 255 / var(--tw-text-opacity))
 }
 
 .group:hover .group-hover\:visible{
