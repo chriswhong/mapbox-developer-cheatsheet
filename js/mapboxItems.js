@@ -422,4 +422,12 @@ export default [
     link: "https://github.com/mapbox/mapbox-gl-draw",
     iconClass: "fa-brands fa-square-js",
   },
+  {
+    type: "tile",
+    category: "tools-and-resources",
+    title: "turf-swift",
+    subTitle: "advanced spatial analysis in Swift",
+    link: "https://github.com/mapbox/turf-swift",
+    iconClass: "fa-brands fa-apple",
+  },
 ];
