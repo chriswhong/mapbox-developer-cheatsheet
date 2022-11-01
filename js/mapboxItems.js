@@ -406,4 +406,12 @@ export default [
     link: "https://turfjs.org/",
     iconClass: "fa-brands fa-square-js",
   },
+  {
+    type: "tile",
+    category: "tools-and-resources",
+    title: "threebox.js",
+    subTitle: "render 3d models on Mapbox GL JS maps",
+    link: "https://github.com/jscastro76/threebox",
+    iconClass: "fa-brands fa-square-js",
+  },
 ];
