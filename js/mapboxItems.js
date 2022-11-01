@@ -10,10 +10,11 @@ export default [
   },
   {
     type: "tile",
-    title: "MapboxGL JS",
+    title: "Mapbox GL JS",
     category: "maps",
     subTitle: "Impressive WebGL Map Rendering",
     link: "https://docs.mapbox.com/mapbox-gl-js/guides/",
+    iconClass: "fa-brands fa-square-js",
   },
   {
     type: "tile",
@@ -21,6 +22,7 @@ export default [
     category: "maps",
     subTitle: "Custom Vector Tile Hosting",
     link: "https://docs.mapbox.com/mapbox-tiling-service/guides/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
@@ -28,6 +30,7 @@ export default [
     category: "maps",
     subTitle: "GL Vector Styling Syntax",
     link: "https://docs.mapbox.com/mapbox-gl-js/style-spec/",
+    iconClass: "fa-regular fa-file",
   },
   {
     type: "tile",
@@ -35,6 +38,7 @@ export default [
     category: "maps",
     subTitle: "Vector Data in small chunks",
     link: "https://docs.mapbox.com/api/maps/vector-tiles/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
@@ -42,6 +46,7 @@ export default [
     category: "maps",
     subTitle: "Raster Images for web maps",
     link: "https://docs.mapbox.com/api/maps/raster-tiles/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
@@ -49,6 +54,7 @@ export default [
     title: "Static Images API",
     subTitle: "Generate Customized Maps as Images",
     link: "https://docs.mapbox.com/api/maps/static-images/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
@@ -56,6 +62,7 @@ export default [
     title: "Static Tiles API",
     subTitle: "Serve raster tiles from Studio styles",
     link: "https://docs.mapbox.com/api/maps/static-tiles/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
@@ -63,6 +70,7 @@ export default [
     title: "Styles API",
     subTitle: "Get/set map styles, fonts, and images",
     link: "https://docs.mapbox.com/api/maps/styles/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
@@ -70,6 +78,7 @@ export default [
     title: "TileQuery API",
     subTitle: "Retrieve feature data from vector tilesets",
     link: "https://docs.mapbox.com/api/maps/tilequery/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
@@ -77,6 +86,7 @@ export default [
     title: "Uploads API",
     subTitle: "Transform geographic data into tilesets",
     link: "https://docs.mapbox.com/api/maps/uploads/",
+    iconClass: "fa-solid fa-gear",
   },
 
   {
@@ -85,20 +95,31 @@ export default [
     title: "Datasets API",
     subTitle: "Get/Set features in datasets",
     link: "https://docs.mapbox.com/api/maps/datasets/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
     category: "maps",
     title: "Fonts API",
     subTitle: "Manage fonts used in mapbox styles",
-    link: "",
+    link: "https://docs.mapbox.com/api/maps/fonts/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
     category: "maps",
-    title: "Maps Mobile SDKs",
-    subTitle: "Build interactive maps on iOS and Android",
-    link: "https://docs.mapbox.com/api/maps/fonts/",
+    title: "Maps SDK for iOS",
+    subTitle: "Build amazing interactive maps on iOS",
+    link: "https://docs.mapbox.com/ios/",
+    iconClass: "fa-brands fa-apple",
+  },
+  {
+    type: "tile",
+    category: "maps",
+    title: "Maps SDK for Android",
+    subTitle: "Build amazing interactive maps on Android",
+    link: "https://docs.mapbox.com/android/",
+    iconClass: "fa-brands fa-android",
   },
   {
     type: "tile",
@@ -106,6 +127,7 @@ export default [
     title: "Static Images Playground",
     subTitle: "Generate Customized Maps as Images",
     link: "https://docs.mapbox.com/playground/static/",
+    iconClass: "fa-regular fa-hand-pointer",
   },
   {
     type: "tile",
@@ -113,6 +135,7 @@ export default [
     title: "Tilequery Playground",
     subTitle: "Retrieve feature data from vector tilesets",
     link: "https://docs.mapbox.com/playground/tilequery/",
+    iconClass: "fa-regular fa-hand-pointer",
   },
   // //
   // // NAVIGATION
@@ -130,6 +153,7 @@ export default [
     title: "Navigation SDK for iOS",
     subTitle: "Build navigation into apps on iOS",
     link: "https://docs.mapbox.com/ios/navigation/",
+    iconClass: "fa-brands fa-apple",
   },
   {
     type: "tile",
@@ -137,6 +161,7 @@ export default [
     title: "Navigation SDK for Android",
     subTitle: "Build navigation into apps on Android",
     link: "https://docs.mapbox.com/android/navigation/",
+    iconClass: "fa-brands fa-android",
   },
   {
     type: "tile",
@@ -144,6 +169,7 @@ export default [
     title: "Directions API",
     subTitle: "get directions",
     link: "https://docs.mapbox.com/api/navigation/directions/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
@@ -151,6 +177,7 @@ export default [
     title: "Map Matching API",
     subTitle: "Snap fuzzy data to roads",
     link: "https://docs.mapbox.com/api/navigation/map-matching/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
@@ -158,6 +185,7 @@ export default [
     title: "Isochrone API",
     subTitle: "Calculate Travel Time Areas",
     link: "",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
@@ -165,6 +193,7 @@ export default [
     title: "Optimization API",
     subTitle: "Get a duration-optimized route between several locations",
     link: "https://docs.mapbox.com/api/navigation/isochrone/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
@@ -172,6 +201,7 @@ export default [
     title: "Optimization API",
     subTitle: "optimized routing for logistics fleets",
     link: "https://docs.mapbox.com/api/navigation/optimization/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
@@ -179,6 +209,7 @@ export default [
     title: "Matrix API",
     subTitle: "get travel times between many points.",
     link: "https://docs.mapbox.com/api/navigation/matrix/",
+    iconClass: "fa-solid fa-gear",
   },
   {
     type: "tile",
@@ -186,6 +217,7 @@ export default [
     title: "Directions API Playground",
     subTitle: "try out the directions API.",
     link: "https://docs.mapbox.com/playground/directions/ ",
+    iconClass: "fa-regular fa-hand-pointer",
   },
   {
     type: "tile",
@@ -193,6 +225,7 @@ export default [
     title: "Isochrone API Playground",
     subTitle: "Calculate Travel Time Areas.",
     link: "https://docs.mapbox.com/api/navigation/matrix/",
+    iconClass: "fa-regular fa-hand-pointer",
   },
   // //
   // // SEARCH
@@ -210,6 +243,7 @@ export default [
     title: "Search SDK for iOS",
     subTitle: "build address search into iOS apps.",
     link: "https://docs.mapbox.com/ios/search/overview/",
+    iconClass: "fa-brands fa-apple",
   },
   {
     type: "tile",
@@ -217,6 +251,7 @@ export default [
     title: "Search SDK for Android",
     subTitle: "build address search into Android apps.",
     link: "https://docs.mapbox.com/android/search/overview/",
+    iconClass: "fa-brands fa-android",
   },
   {
     type: "tile",
@@ -224,6 +259,7 @@ export default [
     title: "Mapbox Search JS",
     subTitle: "build address search into web apps",
     link: "https://docs.mapbox.com/mapbox-search-js/",
+    iconClass: "fa-brands fa-square-js",
   },
   {
     type: "tile",
@@ -245,6 +281,7 @@ export default [
     title: "Mapbox GL Geocoder",
     subTitle: "A geocoder control for Mapbox GL JS",
     link: "https://github.com/mapbox/mapbox-gl-geocoder",
+    iconClass: "fa-brands fa-square-js",
   },
 
   {
@@ -253,6 +290,7 @@ export default [
     title: "Address Autofill",
     subTitle: "autofill postal addresses",
     link: "https://docs.mapbox.com/mapbox-search-js/guides/autofill/",
+    iconClass: "fa-brands fa-square-js",
   },
   {
     type: "tile",
@@ -276,6 +314,7 @@ export default [
     title: "Vision SDK for iOS",
     subTitle: "Interpet road scenes using device camera",
     link: "https://docs.mapbox.com/ios/vision/",
+    iconClass: "fa-brands fa-apple",
   },
   {
     type: "tile",
@@ -283,6 +322,7 @@ export default [
     title: "Vision SDK for Android",
     subTitle: "Interpet road scenes using device camera",
     link: "https://docs.mapbox.com/android/vision/",
+    iconClass: "fa-brands fa-android",
   },
   {
     type: "tile",
@@ -290,6 +330,7 @@ export default [
     title: "Traffic Signs",
     subTitle: "Traffic Sign Image Reference",
     link: "https://docs.mapbox.com/traffic-signs/overview/",
+    iconClass: "fa-regular fa-file",
   },
   // //
   // // DATA
@@ -307,6 +348,7 @@ export default [
     title: "Tilesets",
     subTitle: "Ready to use vector, raster, and elevation data",
     link: "",
+    iconClass: 'fa-solid fa-database"',
   },
   {
     type: "tile",
@@ -314,6 +356,7 @@ export default [
     title: "Mapbox Boundaries",
     subTitle: "Global boundary polygons",
     link: "https://docs.mapbox.com/data/boundaries/",
+    iconClass: 'fa-solid fa-database"',
   },
   {
     type: "tile",
@@ -321,6 +364,7 @@ export default [
     title: "Mapbox Movement",
     subTitle: "Understand where and when people are moving",
     link: "https://docs.mapbox.com/data/movement/",
+    iconClass: 'fa-solid fa-database"',
   },
   {
     type: "tile",
@@ -328,5 +372,6 @@ export default [
     title: "Traffic Data",
     subTitle: "Global Vehicle Traffic",
     link: "https://docs.mapbox.com/data/traffic/",
+    iconClass: 'fa-solid fa-database"',
   },
 ];

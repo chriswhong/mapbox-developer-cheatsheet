@@ -43,7 +43,7 @@ function resizeGrid() {
 
 // build a gridstack widget based on type
 const getWidget = (item) => {
-  const { type, category, title, subTitle, link, x, y } = item;
+  const { type, category, title, subTitle, link, iconClass, x, y } = item;
   const position = { x, y };
   if (type === "category") {
     return {
@@ -70,21 +70,23 @@ const getWidget = (item) => {
     maxH: 1,
     content: `
         <div class="flip-card grid-stack-item-content-inner tile">
-            <div class="flip-card-inner">
-                <div class="flip-card-front category-${category}">
-                    ${title}
+          <div class="flip-card-inner">
+            <div class="flip-card-front category-${category}">
+                ${title}
+                <div class='absolute left-2 bottom-4 text-xs flex items-center'>
+                ${iconClass ? `<i class="fa-lg ${iconClass}"></i>` : ""}
                 </div>
-                  <div class="flip-card-back category-${category}">
-                    <a href = '${link}' target='_blank' noopener noreferrer>
-                        <div class="flip-card-back-inner">
-                            ${subTitle}
-                        </div>
-                    </a>
-                  </div>
             </div>
+            <div class="flip-card-back category-${category}">
+              <a href = '${link}' target='_blank' noopener noreferrer>
+                <div class="flip-card-back-inner">
+                    ${subTitle}
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-
-        `,
+      `,
   };
 };
 
