@@ -43,7 +43,7 @@ function resizeGrid() {
 
 // build a gridstack widget based on type
 const getWidget = (item) => {
-  const { type, category, title, subTitle, x, y } = item;
+  const { type, category, title, subTitle, image, x, y } = item;
   const position = { x, y };
   if (type === "category") {
     return {
@@ -54,6 +54,7 @@ const getWidget = (item) => {
       maxH: 2,
       content: `
             <div class='grid-stack-item-content-inner category-tile category-${category}'>
+                <img src = './img/${category}.svg'>
                 <div class='title'>${title}</div>
                 <div class='subtitle'>${subTitle}</div>
             </div>
@@ -139,36 +140,38 @@ const layoutTiles = () => {
   var categoryTilePositions = {};
 
   var i = 0;
-  function loopOverItems() {
+  function placeTile() {
     let x = 0;
     let y = 0;
 
-    const item = mapboxItems[i];
+    setTimeout(() => {
+      const item = mapboxItems[i];
 
-    if (item.type === "category") {
-      [x, y] = getFreeNearbyPositionForCategory();
-      categoryTilePositions[item.category] = [x, y];
-    } else {
-      [x, y] = getFreeNearbyPosition(
-        categoryTilePositions[item.category],
-        item.category
-      );
-    }
+      if (item.type === "category") {
+        [x, y] = getFreeNearbyPositionForCategory();
+        categoryTilePositions[item.category] = [x, y];
+      } else {
+        [x, y] = getFreeNearbyPosition(
+          categoryTilePositions[item.category],
+          item.category
+        );
+      }
 
-    grid.addWidget(
-      getWidget({
-        ...item,
-        x,
-        y,
-      })
-    ); //  your code here
-    i++;
-    if (i < mapboxItems.length) {
-      loopOverItems();
-    }
+      grid.addWidget(
+        getWidget({
+          ...item,
+          x,
+          y,
+        })
+      ); //  your code here
+      i++;
+      if (i < mapboxItems.length) {
+        placeTile();
+      }
+    }, 0);
   }
 
-  loopOverItems();
+  placeTile();
 };
 
 layoutTiles();

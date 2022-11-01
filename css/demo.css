@@ -87,10 +87,11 @@ h1 {
 .category-tile .title {
   font-weight: 800;
   font-size: 30px;
+  margin-bottom: 8px;
 }
 .category-tile .subtitle {
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 
