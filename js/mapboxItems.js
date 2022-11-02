@@ -137,6 +137,22 @@ export default [
     link: "https://docs.mapbox.com/playground/tilequery/",
     iconClass: "fa-regular fa-hand-pointer",
   },
+  {
+    type: "tile",
+    category: "maps",
+    title: "Mapbox Studio",
+    subTitle: "Brilliant UI for Digital Map Design",
+    link: "https://studio.mapbox.com/",
+    iconClass: "fa-regular fa-hand-pointer",
+  },
+  {
+    type: "tile",
+    category: "maps",
+    title: "Mapbox Studio Manual",
+    subTitle: "Read the Docs for Mapbox Studio",
+    link: "https://docs.mapbox.com/studio-manual/guides/",
+    iconClass: "fa-regular fa-file",
+  },
   // //
   // // NAVIGATION
   // //
@@ -348,7 +364,7 @@ export default [
     title: "Tilesets",
     subTitle: "Ready to use vector, raster, and elevation data",
     link: "",
-    iconClass: 'fa-solid fa-database"',
+    iconClass: 'fa-solid fa-database',
   },
   {
     type: "tile",
@@ -356,7 +372,7 @@ export default [
     title: "Mapbox Boundaries",
     subTitle: "Global boundary polygons",
     link: "https://docs.mapbox.com/data/boundaries/",
-    iconClass: 'fa-solid fa-database"',
+    iconClass: 'fa-solid fa-database',
   },
   {
     type: "tile",
@@ -364,7 +380,7 @@ export default [
     title: "Mapbox Movement",
     subTitle: "Understand where and when people are moving",
     link: "https://docs.mapbox.com/data/movement/",
-    iconClass: 'fa-solid fa-database"',
+    iconClass: 'fa-solid fa-database',
   },
   {
     type: "tile",
@@ -372,7 +388,15 @@ export default [
     title: "Traffic Data",
     subTitle: "Global Vehicle Traffic",
     link: "https://docs.mapbox.com/data/traffic/",
-    iconClass: 'fa-solid fa-database"',
+    iconClass: 'fa-solid fa-database',
+  },
+  {
+    type: "tile",
+    category: "data",
+    title: "Boundaries Explorer",
+    subTitle: "Boundaries Explorer",
+    link: "https://demos.mapbox.com/boundaries-explorer/?country=US&layer=adm1&worldview=US#1.5/41/-100",
+    iconClass: 'fa-regular fa-hand-pointer',
   },
   // //
   // // Tools and Resources
