@@ -952,16 +952,16 @@ video {
   position:relative
 }
 
-.bottom-3{
-  bottom:0.75rem
-}
-
 .left-2{
   left:0.5rem
 }
 
 .bottom-4{
   bottom:1rem
+}
+
+.bottom-3{
+  bottom:0.75rem
 }
 
 .ml-3{
@@ -1269,7 +1269,7 @@ h1 {
   transform: rotateX(180deg);
 }
 
-.flip-card-category-flipped .flip-card-inner:hover {
+.flip-card-category-flipped:hover .flip-card-inner {
   transform: rotateX(0deg);
 }
 

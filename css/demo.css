@@ -171,7 +171,7 @@ h1 {
   transform: rotateX(180deg);
 }
 
-.flip-card-category-flipped .flip-card-inner:hover {
+.flip-card-category-flipped:hover .flip-card-inner {
   transform: rotateX(0deg);
 }
 
