@@ -153,6 +153,14 @@ export default [
     link: "https://docs.mapbox.com/studio-manual/guides/",
     iconClass: "fa-regular fa-file",
   },
+  {
+    type: "tile",
+    category: "maps",
+    title: "Maki Icon Editor",
+    subTitle: "Edit icon sets for use in Mapbox map styles",
+    link: "https://labs.mapbox.com/maki-icons/editor/",
+    iconClass: "fa-regular fa-hand-pointer",
+  },
   // //
   // // NAVIGATION
   // //
