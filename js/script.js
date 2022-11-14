@@ -115,20 +115,10 @@ const getWidget = (item) => {
 
 // scan the grid to find the first available 2x2 position
 const getFreeNearbyPositionForCategory = (gridId) => {
-  let x = 0;
-  let y = 0;
-  while (true) {
-    const isEmpty = grid[gridId].isAreaEmpty(x, y, 2, 2);
-
-    if (isEmpty) {
-      return [x, y];
-    } else if (x === numColumns - 1) {
-      x = 0;
-      y += 1;
-    } else {
-      x += 1;
-    }
-  }
+  const node = { w: 2, h: 2}
+  grid[gridId].engine.findEmptyPosition(node)
+  const { x, y } = node
+  return [x, y]
 };
 
 // find a nearby 1x1 adjacent to this tile's category tile
