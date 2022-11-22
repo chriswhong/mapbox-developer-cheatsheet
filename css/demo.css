@@ -6,8 +6,9 @@
 @tailwind utilities;
 
 html, body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'CeraPRO-Medium', sans-serif;
   margin: 0;
+  background: #000;
 }
 
 .header {
@@ -77,13 +78,12 @@ h1 {
 }
 
 .category-tile {
-  padding: 20px 14px;
   box-sizing: border-box;
-  border-radius: 3px;
+  border-radius: 8px;
 }
 
 .tile {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 12px;
   box-sizing: border-box;
 }
@@ -91,11 +91,10 @@ h1 {
 .category-tile .title {
   font-weight: 800;
   font-size: 30px;
-  margin-top: 11px;
-  margin-bottom: 8px;
   line-height: 30px;
 }
 .category-tile .subtitle {
+  font-family: 'CeraPRO-Light';
   font-weight: 400;
   font-size: 16px;
   cursor: pointer;
@@ -104,38 +103,57 @@ h1 {
 
 
 .category-maps {
-  background-color: #ff9b31de;
-  border-color: #ff9b31de;
+  background-color: #33B976;
+  border-color: #33B976;
+}
+
+.category-maps .icon {
+  color: #33B976
 }
 
 .category-navigation {
-  background-color: #3095ffde;
-  border-color: #3095ffde;
+  background-color: #007AFC;
+  border-color: #007AFC;
+}
+
+.category-navigation .icon {
+  color: #007AFC;
 }
 
 .category-search {
-  background-color: #ffd522de;
-  border-color: #ffd522de;
+  background-color: #E77F06;
+  border-color: #E77F06;
 }
 
-.category-tilesets {
-  background-color: #2fc078de;
-  border-color: #2fc078de;
+.category-search .icon {
+  color: #E77F06;
 }
 
 .category-vision {
-  background-color: #7539d7de;
-  border-color: #7539d7de;
+  background-color: #CA3522;
+  border-color: #CA3522;
+}
+
+.category-vision .icon {
+  color: #CA3522;
 }
 
 .category-data {
-  background-color: #8b96aade;
-  border-color: #8b96aade;
+  background-color: #566171;
+  border-color: #566171;
+}
+
+.category-data .icon {
+  color: #566171;
 }
 
 .category-tools-and-resources {
   background-color: #3d5e9ade;
   border-color: #3d5e9ade;
+}
+
+.category-tools-and-resources .icon {
+  color: #3d5e9ade;
 }
 
 
@@ -145,7 +163,7 @@ h1 {
   height: 100%;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   cursor: pointer;
-  
+  letter-spacing: 0.02em;
 }
 
 /* This container is needed to position the front and back side */
@@ -164,7 +182,7 @@ h1 {
 
 /* card flip transition from https://www.w3schools.com/howto/howto_css_flip_card.asp */
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Do a horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner,
 .flip-card:active .flip-card-inner,
 .flip-card-category-flipped .flip-card-inner{
@@ -192,10 +210,11 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 12px;
   box-sizing: border-box;
-  border-radius: 3px;
+  border-radius: 8px;
+  
 }
 
 /* Style the back side */
@@ -208,12 +227,14 @@ h1 {
   justify-content: center;
   padding: 12px;
   box-sizing: border-box;
-  color: #575757;
+  color: #FFF;
+  font-weight: 400;
   transform: rotateX(180deg);
-  border-width: 4px;
+  border-width: 2px;
   border-style: solid;
-  background-color: white;
-  border-radius: 3px;
+  background-color: #000;
+  border-radius: 8px;
+  font-family: 'CeraPRO-Regular', sans-serif;
 }
 
 .wiggle-card:hover {
@@ -227,4 +248,19 @@ h1 {
   50% {-webkit-transform: rotate(5deg);}
   75% {-webkit-transform: rotate(-1.25deg);}
   100% {-webkit-transform: rotate(0deg);}
+}
+
+@font-face {
+  font-family: "CeraPRO-Light";
+  src: url("../webfonts/CeraPRO-Light.otf")
+}
+
+@font-face {
+  font-family: "CeraPRO-Regular";
+  src: url("../webfonts/CeraPRO-Regular.otf")
+}
+
+@font-face {
+  font-family: "CeraPRO-Medium";
+  src: url("../webfonts/CeraPRO-Medium.otf")
 }

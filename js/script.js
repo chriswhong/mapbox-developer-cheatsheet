@@ -15,7 +15,7 @@ function getRandomInt(min, max, type) {
 
 let grid = (window.grid = GridStack.initAll({
   staticGrid: true,
-  margin: 1,
+  margin: 3,
   oneColumnSize: 400,
 }));
 
@@ -64,10 +64,10 @@ const getWidget = (item) => {
   <div class="flip-card grid-stack-item-content-inner tile category-${category}">
     <div class="flip-card-inner">
       <div class="flip-card-front category-${category}">
-          ${title}
-          <div class='absolute left-2 bottom-4 text-xs flex items-center'>
-          ${iconClass ? `<i class="fa-lg ${iconClass}"></i>` : ""}
-          </div>
+        <div class='bg-white w-8 h-8 rounded-3xl text-xs items-center flex items-center justify-center'>
+          ${iconClass ? `<i class="icon fa-lg ${iconClass}"></i>` : ""}
+        </div>
+        <div>${title}</div>
       </div>
       <div class="flip-card-back category-${category}">
         <a href = '${link}' target='_blank' noopener noreferrer>
@@ -89,11 +89,12 @@ const getWidget = (item) => {
 
   if (type === "category") {
     content = `
-          <div class='wiggle-card cursor-pointer grid-stack-item-content-inner category-tile category-${category} group' data-category=${category}>
-              <img src = './img/${category}.svg'>
-              <div class='title'>${title}</div>
-              <div class='subtitle'>${subTitle}</div>
-              <div class='absolute bottom-3 invisible group-hover:visible text-xs'>Click to see tile descriptions</div>
+          <div class='wiggle-card cursor-pointer grid-stack-item-content-inner category-tile category-${category} group p-6 flex flex-col' data-category=${category}>
+            <div class='title mb-3'>${title}</div>
+            <div class='subtitle grow'>${subTitle}</div>
+            <div class='flex items-center invisible group-hover:visible'>
+              <div class='text-xs border border-white rounded-3xl px-4 py-2 inline-block'>See tile descriptions &nbsp;<i class="fa-solid fa-arrow-right"></i></div>
+            </div>
           </div>
       `;
 
