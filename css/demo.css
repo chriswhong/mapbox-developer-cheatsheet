@@ -148,12 +148,15 @@ h1 {
 }
 
 .category-tools-and-resources {
-  background-color: #3d5e9ade;
-  border-color: #3d5e9ade;
+  background-color: #7539D7
+;
+  border-color: #7539D7
+;
 }
 
 .category-tools-and-resources .icon {
-  color: #3d5e9ade;
+  color: #7539D7
+;
 }
 
 
@@ -177,7 +180,8 @@ h1 {
 }
 
 .grid-stack>.grid-stack-item>.grid-stack-item-content {
-  overflow: visible
+  overflow-x: visible !important;
+  overflow-y: visible !important;
 }
 
 /* card flip transition from https://www.w3schools.com/howto/howto_css_flip_card.asp */

@@ -908,20 +908,8 @@ video {
   position:relative
 }
 
-.bottom-3{
-  bottom:0.75rem
-}
-
-.mb-4{
-  margin-bottom:1rem
-}
-
 .mb-3{
   margin-bottom:0.75rem
-}
-
-.block{
-  display:block
 }
 
 .inline-block{
@@ -948,10 +936,6 @@ video {
   flex-grow:1
 }
 
-.grow-0{
-  flex-grow:0
-}
-
 .cursor-pointer{
   cursor:pointer
 }
@@ -970,10 +954,6 @@ video {
 
 .justify-center{
   justify-content:center
-}
-
-.self-end{
-  align-self:flex-end
 }
 
 .rounded-3xl{
@@ -1171,12 +1151,15 @@ h1 {
 }
 
 .category-tools-and-resources {
-  background-color: #3d5e9ade;
-  border-color: #3d5e9ade;
+  background-color: #7539D7
+;
+  border-color: #7539D7
+;
 }
 
 .category-tools-and-resources .icon {
-  color: #3d5e9ade;
+  color: #7539D7
+;
 }
 
 .flip-card {
@@ -1201,7 +1184,8 @@ h1 {
 }
 
 .grid-stack>.grid-stack-item>.grid-stack-item-content {
-  overflow: visible
+  overflow-x: visible !important;
+  overflow-y: visible !important;
 }
 
 /* card flip transition from https://www.w3schools.com/howto/howto_css_flip_card.asp */
