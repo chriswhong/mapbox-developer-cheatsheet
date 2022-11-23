@@ -924,14 +924,6 @@ video {
   display:grid
 }
 
-.h-8{
-  height:2rem
-}
-
-.w-8{
-  width:2rem
-}
-
 .grow{
   flex-grow:1
 }
@@ -952,10 +944,6 @@ video {
   align-items:center
 }
 
-.justify-center{
-  justify-content:center
-}
-
 .rounded-3xl{
   border-radius:1.5rem
 }
@@ -967,11 +955,6 @@ video {
 .border-white{
   --tw-border-opacity:1;
   border-color:rgb(255 255 255 / var(--tw-border-opacity))
-}
-
-.bg-white{
-  --tw-bg-opacity:1;
-  background-color:rgb(255 255 255 / var(--tw-bg-opacity))
 }
 
 .p-6{

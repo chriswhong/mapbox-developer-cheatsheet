@@ -25,12 +25,16 @@ const calculateNumColumns = () => {
   const PIXELS_PER_COLUMN = 112;
 
   let width = document.body.clientWidth;
-  let numColumns = 4;
+  let minColumns = 4;
 
   const additionalColumns =
     Math.floor((width - MINWIDTH) / PIXELS_PER_COLUMN) + 1;
 
-  return (numColumns += additionalColumns);
+  let columns = minColumns += additionalColumns
+  if (columns > 12) {
+    columns = 12
+  }
+  return columns;
 };
 
 function resizeGrid() {
@@ -56,7 +60,7 @@ function resizeGrid() {
 
 // build a gridstack widget based on type
 const getWidget = (item) => {
-  const { type, category, title, subTitle, link, iconClass, x, y } = item;
+  const { type, category, title, subTitle, link, icon, x, y } = item;
   const position = { x, y };
   const id = slugify(`${category}-${title}`, { lower: true });
 
@@ -64,9 +68,10 @@ const getWidget = (item) => {
   <div class="flip-card grid-stack-item-content-inner tile category-${category}">
     <div class="flip-card-inner">
       <div class="flip-card-front category-${category}">
-        <div class='bg-white w-8 h-8 rounded-3xl text-xs items-center flex items-center justify-center'>
-          ${iconClass ? `<i class="icon fa-lg ${iconClass}"></i>` : ""}
-        </div>
+        <svg width="40" height="40" class='icon'>
+            <path d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="white"/>
+            <use xlink:href="img/shapes.svg#${icon}"></use>
+        </svg>
         <div>${title}</div>
       </div>
       <div class="flip-card-back category-${category}">
@@ -93,7 +98,7 @@ const getWidget = (item) => {
             <div class='title mb-3'>${title}</div>
             <div class='subtitle grow'>${subTitle}</div>
             <div class='flex items-center invisible group-hover:visible'>
-              <div class='text-xs border border-white rounded-3xl px-4 py-2 inline-block'>See tile descriptions &nbsp;<i class="fa-solid fa-arrow-right"></i></div>
+              <div class='text-xs border border-white rounded-3xl px-4 py-2 inline-block'>See tile descriptions →</div>
             </div>
           </div>
       `;
