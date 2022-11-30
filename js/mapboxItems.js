@@ -161,6 +161,14 @@ export default [
     link: "https://labs.mapbox.com/maki-icons/editor/",
     icon: "mapbox-studio-manual",
   },
+  {
+    type: "tile",
+    category: "maps",
+    title: "Maki Icons",
+    subTitle: "Icons used in Mapbox Core Styles",
+    link: "https://labs.mapbox.com/maki-icons/",
+    icon: "mapbox-studio-manual",
+  },
   // //
   // // NAVIGATION
   // //
