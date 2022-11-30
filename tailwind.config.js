@@ -11,7 +11,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['"Open Sans"', "sans-serif"],
+        sans: ['"CeraPRO"', "sans-serif"],
       },
     },
   },

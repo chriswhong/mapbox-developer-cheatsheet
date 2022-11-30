@@ -6,9 +6,11 @@
 @tailwind utilities;
 
 html, body {
-  font-family: 'CeraPRO-Medium', sans-serif;
+  font-family: 'CeraPRO', sans-serif;
   margin: 0;
   background: #000;
+  height: 100%;
+  width: 100%;
 }
 
 .header {
@@ -94,7 +96,7 @@ h1 {
   line-height: 30px;
 }
 .category-tile .subtitle {
-  font-family: 'CeraPRO-Light';
+  font-family: 'CeraPRO';
   font-weight: 400;
   font-size: 16px;
   cursor: pointer;
@@ -238,7 +240,7 @@ h1 {
   border-style: solid;
   background-color: #000;
   border-radius: 8px;
-  font-family: 'CeraPRO-Regular', sans-serif;
+  font-family: 'CeraPRO', sans-serif;
 }
 
 .wiggle-card:hover {
@@ -255,16 +257,25 @@ h1 {
 }
 
 @font-face {
-  font-family: "CeraPRO-Light";
-  src: url("../webfonts/CeraPRO-Light.otf")
+  font-family: "CeraPRO";
+  src: url("../webfonts/CeraPRO-Thin.otf");
+  font-weight: 100;
 }
 
 @font-face {
-  font-family: "CeraPRO-Regular";
-  src: url("../webfonts/CeraPRO-Regular.otf")
+  font-family: "CeraPRO";
+  src: url("../webfonts/CeraPRO-Light.otf");
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "CeraPRO-Medium";
-  src: url("../webfonts/CeraPRO-Medium.otf")
+  font-family: "CeraPRO";
+  src: url("../webfonts/CeraPRO-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "CeraPRO";
+  src: url("../webfonts/CeraPRO-Medium.otf");
+  font-weight: 500;
 }
