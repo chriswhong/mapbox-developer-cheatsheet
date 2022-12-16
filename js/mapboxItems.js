@@ -458,6 +458,14 @@ export default [
     link: "https://github.com/mapbox/mapbox-gl-draw",
     icon: "mapbox-studio-manual",
   },
+   {
+    type: "tile",
+    category: "tools-and-resources",
+    title: "Cartogram",
+    subTitle: "Make a map style based on colors from any image",
+    link: "https://apps.mapbox.com/cartogram/",
+    icon: "mapbox-studio-manual",
+  },
   {
     type: "tile",
     category: "tools-and-resources",
