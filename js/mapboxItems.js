@@ -474,4 +474,12 @@ export default [
     link: "https://github.com/mapbox/turf-swift",
     icon: "apple",
   },
+    {
+    type: "tile",
+    category: "tools-and-resources",
+    title: "Contribute",
+    subTitle: "contribute changes and corrections to our base map data",
+    link: "https://www.mapbox.com/contribute/",
+    icon: "playground",
+  }
 ];
