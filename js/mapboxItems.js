@@ -328,39 +328,6 @@ export default [
 
   },
   // //
-  // // VISION
-  // //
-  {
-    type: "category",
-    title: "Vision",
-    category: "vision",
-    subTitle: "Interpret road scenes in real-time",
-  },
-  {
-    type: "tile",
-    category: "vision",
-    title: "Vision SDK for iOS",
-    subTitle: "Interpet road scenes using device camera",
-    link: "https://docs.mapbox.com/ios/vision/",
-    icon: "vision-sdk-for-ios",
-  },
-  {
-    type: "tile",
-    category: "vision",
-    title: "Vision SDK for Android",
-    subTitle: "Interpet road scenes using device camera",
-    link: "https://docs.mapbox.com/android/vision/",
-    icon: "vision-sdk-for-android",
-  },
-  {
-    type: "tile",
-    category: "vision",
-    title: "Traffic Signs",
-    subTitle: "Traffic Sign Image Reference",
-    link: "https://docs.mapbox.com/traffic-signs/overview/",
-    icon: "traffic-signs",
-  },
-  // //
   // // DATA
   // //
   {
